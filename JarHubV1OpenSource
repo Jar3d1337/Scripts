@@ -1,0 +1,657 @@
+--[[
+       Scripts:
+
+  Shindo Life Auto Farm
+  Arsenal Silent Aim
+  Pet Simulator X Proxo Hub
+
+  ]]
+
+-- Instances:
+
+local JarHubV1 = Instance.new("ScreenGui")
+local ToggleMenu = Instance.new("TextButton")
+local UIGradient = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local Shadow = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local MainJarHub = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Logo = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local Pattern = Instance.new("ImageLabel")
+local UICorner_5 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local PFP = Instance.new("ImageLabel")
+local UICorner_6 = Instance.new("UICorner")
+local PlrName = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local filter_3 = Instance.new("ImageButton")
+local filter_2 = Instance.new("ImageButton")
+local filter_1 = Instance.new("ImageButton")
+local Thing1 = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local Page1 = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local Game1 = Instance.new("TextButton")
+local UIGradient_3 = Instance.new("UIGradient")
+local UICorner_10 = Instance.new("UICorner")
+local Game2 = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Game3 = Instance.new("TextButton")
+local UIGradient_4 = Instance.new("UIGradient")
+local UICorner_12 = Instance.new("UICorner")
+local UIGradient_5 = Instance.new("UIGradient")
+local PlrId = Instance.new("TextLabel")
+local UICorner_13 = Instance.new("UICorner")
+local UIGradient_6 = Instance.new("UIGradient")
+
+--Properties:
+
+JarHubV1.Name = "JarHubV1"
+JarHubV1.Parent = game:WaitForChild("CoreGui")
+
+ToggleMenu.Name = "ToggleMenu"
+ToggleMenu.Parent = JarHubV1
+ToggleMenu.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+ToggleMenu.BorderSizePixel = 0
+ToggleMenu.Position = UDim2.new(0.907937884, 0, 0.780740619, 0)
+ToggleMenu.Size = UDim2.new(0, 108, 0, 22)
+ToggleMenu.ZIndex = 2
+ToggleMenu.Font = Enum.Font.GothamSemibold
+ToggleMenu.Text = "OPEN"
+ToggleMenu.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleMenu.TextScaled = true
+ToggleMenu.TextSize = 14.000
+ToggleMenu.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(176, 176, 176))}
+UIGradient.Rotation = 90
+UIGradient.Parent = ToggleMenu
+
+UICorner.CornerRadius = UDim.new(8, 8)
+UICorner.Parent = ToggleMenu
+
+Shadow.Name = "Shadow"
+Shadow.Parent = ToggleMenu
+Shadow.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow.BorderSizePixel = 0
+Shadow.Size = UDim2.new(1, 0, 1, 4)
+
+UICorner_2.CornerRadius = UDim.new(8, 8)
+UICorner_2.Parent = Shadow
+
+MainJarHub.Name = "MainJarHub"
+MainJarHub.Parent = JarHubV1
+MainJarHub.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+MainJarHub.Position = UDim2.new(0.549088359, 0, 0.269047618, 0)
+MainJarHub.Selectable = true
+MainJarHub.Size = UDim2.new(0, 548, 0, 285)
+MainJarHub.Visible = false
+
+UICorner_3.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_3.Parent = MainJarHub
+
+Logo.Name = "Logo"
+Logo.Parent = MainJarHub
+Logo.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Logo.Position = UDim2.new(0.138686135, 0, -0.221052632, 0)
+Logo.Size = UDim2.new(0, 396, 0, 50)
+Logo.Font = Enum.Font.Nunito
+Logo.Text = "JarHubLogo"
+Logo.TextColor3 = Color3.fromRGB(255, 255, 255)
+Logo.TextScaled = true
+Logo.TextSize = 14.000
+Logo.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0.5, 0)
+UICorner_4.Parent = Logo
+
+Pattern.Name = "Pattern"
+Pattern.Parent = MainJarHub
+Pattern.AnchorPoint = Vector2.new(0.5, 0.5)
+Pattern.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pattern.BackgroundTransparency = 1.000
+Pattern.Position = UDim2.new(0.500000119, 0, 0.499122798, 0)
+Pattern.Size = UDim2.new(0, 548, 0, 285)
+Pattern.Image = "rbxassetid://300134974"
+Pattern.ImageTransparency = 0.800
+Pattern.ScaleType = Enum.ScaleType.Tile
+Pattern.SliceCenter = Rect.new(0, 256, 0, 256)
+Pattern.TileSize = UDim2.new(0, 90, 0, 90)
+
+UICorner_5.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_5.Parent = Pattern
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(35, 35, 35))}
+UIGradient_2.Rotation = 90
+UIGradient_2.Parent = Pattern
+
+PFP.Name = "PFP"
+PFP.Parent = MainJarHub
+PFP.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+PFP.Position = UDim2.new(0.653284669, 0, 0.0491228104, 0)
+PFP.Size = UDim2.new(0, 88, 0, 84)
+PFP.Visible = false
+
+UICorner_6.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_6.Parent = PFP
+
+PlrName.Name = "PlrName"
+PlrName.Parent = MainJarHub
+PlrName.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+PlrName.BackgroundTransparency = 1.000
+PlrName.BorderColor3 = Color3.fromRGB(255, 255, 255)
+PlrName.Position = UDim2.new(0.551094949, 0, 0.322807014, 0)
+PlrName.Size = UDim2.new(0, 200, 0, 50)
+PlrName.Font = Enum.Font.Nunito
+PlrName.Text = "Player Name"
+PlrName.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlrName.TextScaled = true
+PlrName.TextSize = 14.000
+PlrName.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_7.Parent = PlrName
+
+filter_3.Name = "filter_3"
+filter_3.Parent = MainJarHub
+filter_3.BackgroundTransparency = 1.000
+filter_3.Position = UDim2.new(0.815693378, 0, 0.877192974, 0)
+filter_3.Size = UDim2.new(0, 25, 0, 25)
+filter_3.ZIndex = 2
+filter_3.Image = "rbxassetid://3926305904"
+filter_3.ImageRectOffset = Vector2.new(884, 444)
+filter_3.ImageRectSize = Vector2.new(36, 36)
+
+filter_2.Name = "filter_2"
+filter_2.Parent = MainJarHub
+filter_2.BackgroundTransparency = 1.000
+filter_2.Position = UDim2.new(0.726277351, 0, 0.877192974, 0)
+filter_2.Size = UDim2.new(0, 25, 0, 25)
+filter_2.ZIndex = 2
+filter_2.Image = "rbxassetid://3926305904"
+filter_2.ImageRectOffset = Vector2.new(364, 444)
+filter_2.ImageRectSize = Vector2.new(36, 36)
+
+filter_1.Name = "filter_1"
+filter_1.Parent = MainJarHub
+filter_1.BackgroundTransparency = 1.000
+filter_1.Position = UDim2.new(0.636861265, 0, 0.877192974, 0)
+filter_1.Size = UDim2.new(0, 25, 0, 25)
+filter_1.ZIndex = 2
+filter_1.Image = "rbxassetid://3926305904"
+filter_1.ImageRectOffset = Vector2.new(364, 484)
+filter_1.ImageRectSize = Vector2.new(36, 36)
+
+Thing1.Name = "Thing1"
+Thing1.Parent = MainJarHub
+Thing1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Thing1.BackgroundTransparency = 1.000
+Thing1.Position = UDim2.new(0.510767162, 0, 0.852631569, 0)
+Thing1.Size = UDim2.new(0, 237, 0, 38)
+
+UICorner_8.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_8.Parent = Thing1
+
+Page1.Name = "Page1"
+Page1.Parent = MainJarHub
+Page1.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Page1.Position = UDim2.new(0.0346715339, 0, 0.0631578937, 0)
+Page1.Size = UDim2.new(0, 249, 0, 232)
+
+UICorner_9.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_9.Parent = Page1
+
+Game1.Name = "Game1"
+Game1.Parent = Page1
+Game1.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Game1.Position = UDim2.new(0.0682730898, 0, 0.056034483, 0)
+Game1.Size = UDim2.new(0, 217, 0, 50)
+Game1.Font = Enum.Font.Nunito
+Game1.Text = "Arsenal Silent Aim <WORKING>"
+Game1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Game1.TextScaled = true
+Game1.TextSize = 14.000
+Game1.TextWrapped = true
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(202, 202, 202))}
+UIGradient_3.Rotation = -90
+UIGradient_3.Parent = Game1
+
+UICorner_10.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_10.Parent = Game1
+
+Game2.Name = "Game2"
+Game2.Parent = Page1
+Game2.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Game2.Position = UDim2.new(0.0642570257, 0, 0.392241359, 0)
+Game2.Size = UDim2.new(0, 217, 0, 50)
+Game2.Font = Enum.Font.Nunito
+Game2.Text = "Pet Simulator X <WORKING>"
+Game2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Game2.TextScaled = true
+Game2.TextSize = 14.000
+Game2.TextWrapped = true
+
+UICorner_11.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_11.Parent = Game2
+
+Game3.Name = "Game3"
+Game3.Parent = Page1
+Game3.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Game3.Position = UDim2.new(0.0642570257, 0, 0.74999994, 0)
+Game3.Size = UDim2.new(0, 217, 0, 50)
+Game3.Font = Enum.Font.Nunito
+Game3.Text = "Shindo Life Mini Hub <WORKING>"
+Game3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Game3.TextScaled = true
+Game3.TextSize = 14.000
+Game3.TextWrapped = true
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(141, 141, 141))}
+UIGradient_4.Rotation = 90
+UIGradient_4.Parent = Game3
+
+UICorner_12.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_12.Parent = Game3
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(35, 35, 35))}
+UIGradient_5.Rotation = 90
+UIGradient_5.Parent = Page1
+
+PlrId.Name = "PlrId"
+PlrId.Parent = MainJarHub
+PlrId.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+PlrId.BackgroundTransparency = 1.000
+PlrId.BorderColor3 = Color3.fromRGB(255, 255, 255)
+PlrId.Position = UDim2.new(0.572992682, 0, 0.498245627, 0)
+PlrId.Size = UDim2.new(0, 176, 0, 33)
+PlrId.Font = Enum.Font.Nunito
+PlrId.Text = "Player ID"
+PlrId.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlrId.TextScaled = true
+PlrId.TextSize = 14.000
+PlrId.TextWrapped = true
+
+UICorner_13.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_13.Parent = PlrId
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(35, 35, 35))}
+UIGradient_6.Rotation = 90
+UIGradient_6.Parent = MainJarHub
+
+-- Scripts:
+
+local function KIWVUZM_fake_script() -- ToggleMenu.LocalScript 
+	local script = Instance.new('LocalScript', ToggleMenu)
+
+	Frame = script.Parent.Parent.MainJarHub
+	local button = script.Parent
+	local pattern = Frame.Pattern
+	local thing = Frame.Thing1
+	local logo = Frame.Logo
+	local plrname = Frame.PlrName
+	local plrid = Frame.PlrId
+	local f1 = Frame.filter_1
+	local f2 = Frame.filter_2
+	local f3 = Frame.filter_3
+	local pfp = Frame.PFP
+	local page1 = Frame.Page1
+	local game1p1 = page1.Game1
+	local game2p1 = page1.Game2
+	local game3p1 = page1.Game3
+	
+	function onClick()
+		if Frame.Visible == false then
+			Frame.Visible = true
+			
+			
+			local Properties = {Size = UDim2.new(0, 249, 0, 232)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(page1, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 217, 0, 50)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(game1p1, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 217, 0, 50)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(game2p1, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 217, 0, 50)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(game3p1, Info, Properties)
+			TS:Play()
+			
+			
+			local Properties = {Size = UDim2.new(0, 548, 0, 285)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(Frame, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 176, 0, 33)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(plrid, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 548, 0, 284)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(pattern, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 396, 0, 50)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(logo, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 237, 0, 38)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(thing, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 25, 0, 25)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(f1, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 25, 0, 25)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(f2, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 25, 0, 25)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(f3, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 153, 0, 140)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(pfp, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 200, 0, 50)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(plrname, Info, Properties)
+			TS:Play()
+		elseif Frame.Visible == true then
+			local Properties = {Size = UDim2.new(0, 0, 0, 0)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(Frame, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 0, 0, 0)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(plrid, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 0, 0, 0)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(pattern, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 0, 0, 0)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(logo, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 0, 0, 0)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(thing, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 0, 0, 0)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(f1, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 0, 0, 0)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(f2, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 0, 0, 0)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(f3, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 0, 0, 0)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(pfp, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 0, 0, 0)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(plrname, Info, Properties)
+			TS:Play()
+			
+			
+			local Properties = {Size = UDim2.new(0, 0, 0, 0)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(page1, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 0, 0, 0)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(game1p1, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 0, 0, 0)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(game2p1, Info, Properties)
+			TS:Play()
+			local Properties = {Size = UDim2.new(0, 0, 0, 0)} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(game3p1, Info, Properties)
+			TS:Play()
+			
+			
+			wait(0.5)
+			Frame.Visible = false
+		end
+	end
+	
+	button.MouseButton1Click:connect(onClick)
+	
+end
+coroutine.wrap(KIWVUZM_fake_script)()
+local function ZIOPO_fake_script() -- Logo.LocalScript 
+	local script = Instance.new('LocalScript', Logo)
+
+	local bar = script.Parent
+	
+	while true do
+		bar.Text = "J"
+		wait(0.4)
+		bar.Text = "J A"
+		wait(0.4)
+		bar.Text = "J A R"
+		wait(0.4)
+		bar.Text = "J A R |"
+		wait(0.4)
+		bar.Text = "J A R | H"
+		wait(0.4)
+		bar.Text = "J A R | H U"
+		wait(0.4)
+		bar.Text = "J A R | H U B"
+		wait(2)
+		bar.Text = "J A R | H U B"
+		wait(0.4)
+		bar.Text = "J A R | H U"
+		wait(0.4)
+		bar.Text = "J A R | H"
+		wait(0.4)
+		bar.Text = "J A R |"
+		wait(0.4)
+		bar.Text = "J A R"
+		wait(0.4)
+		bar.Text = "J A"
+		wait(0.4)
+		bar.Text = "J"
+		wait(0.4)
+	end
+end
+coroutine.wrap(ZIOPO_fake_script)()
+local function BVIL_fake_script() -- PFP.LocalScript 
+	local script = Instance.new('LocalScript', PFP)
+
+	local Player = game.Players.LocalPlayer -- Path to Players
+	local playerIcon = game.Players:GetUserThumbnailAsync(Player.UserId, Enum.ThumbnailType.AvatarBust, Enum.ThumbnailSize.Size420x420) -- The Icon
+	local PlayerIcon = Player.PlayerGui.Menu.Frame.PFP
+	
+	spawn(function() -- Function when player has spawned
+		if playerIcon then 
+			PlayerIcon.Image = playerIcon 
+		end
+	end)
+		
+		
+		
+end
+coroutine.wrap(BVIL_fake_script)()
+local function AVQYFTE_fake_script() -- PlrName.LocalScript 
+	local script = Instance.new('LocalScript', PlrName)
+
+	script.Parent.Text = game.Players.LocalPlayer.Name
+end
+coroutine.wrap(AVQYFTE_fake_script)()
+-- filter_3.LocalScript is disabled.
+-- filter_2.LocalScript is disabled.
+local function NYRL_fake_script() -- filter_1.LocalScript 
+	local script = Instance.new('LocalScript', filter_1)
+
+	local Button = script.Parent
+	frame = script.Parent.Parent.Page1
+	
+	function onClick()
+		if frame.Transparency == 1 then
+			local Properties = {Transparency = 0} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(frame, Info, Properties)
+			TS:Play()
+
+			local Properties = {Transparency = 0} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(game1, Info, Properties)
+			TS:Play()
+
+			local Properties = {Transparency = 0} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(game2, Info, Properties)
+			TS:Play()
+
+			local Properties = {Transparency = 0} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(game3, Info, Properties)
+			TS:Play()
+
+		elseif frame.Transparency == 0 then
+			local Properties = {Transparency = 1} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(frame, Info, Properties)
+			TS:Play()
+
+			local Properties = {Transparency = 1} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(game1, Info, Properties)
+			TS:Play()
+
+			local Properties = {Transparency = 1} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(game2, Info, Properties)
+			TS:Play()
+
+			local Properties = {Transparency = 1} -- change the number as you wish
+			local Info = TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out) -- edit as you want
+			local TS = game:GetService("TweenService"):Create(game3, Info, Properties)
+			TS:Play()
+
+		end
+	end
+	
+	Button.MouseButton1Click:connect(onClick)
+	
+end
+coroutine.wrap(NYRL_fake_script)()
+local function KOEPDZ_fake_script() -- Game1.Script 
+	local script = Instance.new('Script', Game1)
+
+	local a = script.Parent
+	
+	a.MouseButton1Click:connect(function()
+		local function GetService(Name)
+			return game:GetService(Name)
+		end
+
+		local Players = GetService("Players")
+		local LocalPlayer = Players.LocalPlayer
+		local RunService = GetService("RunService")
+		local BodyPart = nil
+		local Camera = workspace.CurrentCamera
+		local Mouse = LocalPlayer:GetMouse()
+
+		local function WTS(Object)
+			local ObjectVector = Camera:WorldToScreenPoint(Object.Position)
+			return Vector2.new(ObjectVector.X, ObjectVector.Y)
+		end
+
+		local function PositionToRay(Origin, Target)
+			return Ray.new(Origin, (Target - Origin).Unit * 600)
+		end
+
+		local function Filter(Object)
+			if string.find(Object.Name, "Gun") then
+				return
+			end
+			if Object:IsA("Part") or Object:IsA("MeshPart") then
+				return true
+			end
+		end
+
+		local function MousePositionToVector2()
+			return Vector2.new(Mouse.X, Mouse.Y)
+		end
+
+		local function IsOnScreen(Object)
+			local IsOnScreen = Camera:WorldToScreenPoint(Object.Position)
+			return IsOnScreen
+		end
+
+		local function GetClosestBodyPartFromCursor()
+			local ClosestDistance = math.huge
+			for i,  v in next, Players:GetPlayers() do
+				if v ~= LocalPlayer and v.Team ~= LocalPlayer.Team and v.Character and v.Character:FindFirstChild("Humanoid") then
+					for k,  x in next, v.Character:GetChildren() do
+						if Filter(x) and IsOnScreen(x) then
+							local Distance = (WTS(x) - MousePositionToVector2()).Magnitude
+							if Distance < ClosestDistance then
+								ClosestDistance = Distance
+								BodyPart = x
+							end
+						end
+					end
+				end
+			end
+		end
+
+		local OldNameCall; 
+		OldNameCall = hookmetamethod(game, "__namecall", function(Self, ...)
+			local Method = getnamecallmethod()
+			local Args = {...}
+			if Method == "FindPartOnRayWithIgnoreList" and BodyPart ~= nil then
+				Args[1] = PositionToRay(Camera.CFrame.Position, BodyPart.Position)
+				return OldNameCall(Self, unpack(Args))
+			end
+			return OldNameCall(Self, ...)
+		end)
+
+		RunService:BindToRenderStep("Dynamic Silent Aim", 120, GetClosestBodyPartFromCursor)
+	end)
+end
+coroutine.wrap(KOEPDZ_fake_script)()
+local function KHTPL_fake_script() -- Game2.Script 
+	local script = Instance.new('Script', Game2)
+
+	local a = script.Parent
+	
+	a.MouseButton1Click:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/si1nnx/psxx/main/g"))()
+	end)
+end
+coroutine.wrap(KHTPL_fake_script)()
+local function GBPSSM_fake_script() -- Game3.Script 
+	local script = Instance.new('Script', Game3)
+
+	local a = script.Parent
+	
+	a.MouseButton1Click:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/6Wumpus6/SpyHub/main/ShindoLife", true))()
+	end)
+end
+coroutine.wrap(GBPSSM_fake_script)()
+local function VANSV_fake_script() -- PlrId.LocalScript 
+	local script = Instance.new('LocalScript', PlrId)
+
+	script.Parent.Text = game.Players.LocalPlayer.UserId
+end
+coroutine.wrap(VANSV_fake_script)()
